@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akıllı Mezarlık Arama</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <span class="eyebrow">CBS PROTOTİPİ</span>
+      <h1>Akıllı Mezarlık Arama</h1>
+      <p>Yazım farklılıklarına toleranslı isim arama ve örnek mezar konumlandırma.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="search-card">
+      <h2>Kişi Ara</h2>
+      <div class="form-grid">
+        <label>Ad
+          <input id="name" placeholder="Örn. Mehlika" />
+        </label>
+        <label>Soyad
+          <input id="surname" placeholder="Örn. Yılmaz" />
+        </label>
+      </div>
+      <button id="searchBtn">Akıllı Arama</button>
+      <div class="examples">
+        Deneyin:
+        <button class="example" data-name="Mehlika" data-surname="Yılmaz">Mehlika Yılmaz</button>
+        <button class="example" data-name="Melika" data-surname="Yılmaz">Melika Yılmaz</button>
+        <button class="example" data-name="Meliha" data-surname="Yılmaz">Meliha Yılmaz</button>
+      </div>
+    </section>
+
+    <section id="status"></section>
+    <section id="results" class="results"></section>
+    <section id="map" class="map"></section>
+  </main>
+
+  <footer>
+    Eğitim amaçlı prototip — gerçek belediye/personel verisi içermez.
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
