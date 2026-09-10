@@ -1,8 +1,6 @@
-# CBS Tabanlı Akıllı Mezarlık Kayıt Arama ve Konumlandırma Sistemi
+# Akıllı Mezarlık Kayıt Arama ve Konumlandırma Sistemi
 
-Bu proje, Kayseri Büyükşehir Belediyesi'nin kamuya açık Mezarlık Bilgi Sistemi'nde görülen arama alanlarından esinlenilerek hazırlanmış **eğitim amaçlı bir prototiptir**. Gerçek belediye verisi kullanılmaz.
-
-KBB'nin mevcut sisteminde ad, soyad, baba adı, anne adı, doğum/ölüm yılı, bölge, ada, parsel ve mezar no gibi alanlarla arama yapılabilmekte; mezar bölge/ada/parsel/mezar harita katmanları da bulunmaktadır. Bu prototip mevcut sistemi kopyalamak yerine, özellikle **hatalı veya farklı yazılmış isimleri toleranslı biçimde bulma** özelliğini gösterir.
+Bu prototip **hatalı veya farklı yazılmış isimleri toleranslı biçimde bulma** özelliğini gösterir.
 
 ## Proje hedefi
 
@@ -49,7 +47,7 @@ http://localhost:3000
 
 ## Önemli veri güvenliği notu
 
-Bu sürümde gerçek kişisel veri kullanılmamıştır. Gerçek belediye verisi ancak kurumun yetkilendirmesi ve uygun veri erişim yöntemi varsa kullanılmalıdır. Proje, KBB'nin mevcut sistemine doğrudan bağlanmaz ve onun verisini kazımaz.
+Bu sürümde gerçek kişisel veri kullanılmamıştır. 
 
 ## Geliştirme yol haritası
 
@@ -58,8 +56,3 @@ Bu sürümde gerçek kişisel veri kullanılmamıştır. Gerçek belediye verisi
 3. Sonuçların skorlanması ✅
 4. Mezarlık / ada / parsel / mezar bilgilerinin gösterimi ✅
 5. Haritada örnek konum gösterimi ✅
-6. Birden fazla alanla ağırlıklı eşleştirme
-7. Gerçek CBS servisine kurum izniyle entegrasyon
-8. Doğal dil / AI destekli arama
-9. Kullanıcı yetkilendirme ve audit log
-10. Test veri seti ve başarı ölçümü
